@@ -27,12 +27,7 @@ class hit extends PluginBase implements Listener{
     public function onDisable(){
         $this->getLogger()->info("§b HitModifier disabled.");
     }
-
-    public function onJoin(PlayerJoinEvent $join){
-        $pl = $join->getPlayer();
-        $n = $pl->getName();
-        $pl->sendPopup("§7[§3ItaSkyGames§7]§b Ciao $n §7");
-    }
+    
     public function onDamage(EntityDamageEvent $ev){
         if($ev instanceof EntityDamageByEntityEvent){
             $ev->setKnockBack($this->slide->get("kb-number"));
