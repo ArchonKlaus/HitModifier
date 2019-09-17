@@ -2,4 +2,4 @@ name: HitModifier
 main: varion\hit
 version: 1.0
 author: Varion
-api: 3.0.0-ALPHA12
+api: 3.0.0
